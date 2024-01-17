@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="redcircle"></div>
+        <div id="bluecircle"></div>
+        <div class="cardwrapper">
+            <div > <img  class="photo" src="./assets/Mohit Khatri.jpg"> </div>
+            <div class="name">Mohit Khatri</div>
+            <div class="desc"> Student , BVCOE</div>
+            <div class="clickbuttons">
+                <button onclick="openmodal()" class="leftbtn">
+                    <i class="fa-solid fa-share"></i>
+                    <div class="sharebtn"> Share My Profile</div>
+                </button>
+             <button class="followbtn">Follow Me</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="modal">
+        <div class="modal-header">
+          <h1>Share My Profile</h1>
+          <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+          </div>
+        </div>
+    
+    
+        <div>
+    
+          <h3>Share this via</h3>
+    
+          
+          <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+    
+    
+      </div>
+      <div class="overlay" onclick="closeModal()"></div>
+</body>
+<script src="script.js" ></script>
+<script src="https://kit.fontawesome.com/3bd445fb4a.js" crossorigin="anonymous"></script>
+</html>
